@@ -65,6 +65,7 @@ def AssignPuppyToShelter(session):
     else:
         return None
 
+
 def ShelterHasSpace(shelter):
     if shelter.currentOccupancy < shelter.maxCapacity:
         print shelter.name, 'has space!'
@@ -72,6 +73,13 @@ def ShelterHasSpace(shelter):
     else:
         print shelter.name, 'is full :('
         return False
+
+
+def AdoptPuppy(adopters):
+    # remove puppy from its shelter,
+    # decrement number of puppies in shelter```````
+    # add puppy to each adopter.puppies
+    # add each adopter to puppies.adopters
 
 
 # for i, x in enumerate(male_names):
